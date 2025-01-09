@@ -14,19 +14,26 @@ jobs:
     defaults:
       run:
         working-directory: ./swiftpm-lib
-    runs-on: macos-latest
+    runs-on: macos-15
 
     steps:
       - uses: actions/checkout@v4
       - uses: swift-actions/setup-swift@v2
-      - run: swift --version
+      - name: Xcode versions
+        run: |
+          xcode-select -p
+          pkgutil --pkg-info=com.apple.pkg.CLTools_Executables
+      - name: Swift versions
+        run: |
+          xcrun swift --version
+          swift --version
 
   swift-build:
     defaults:
       run:
         working-directory: ./swiftpm-lib
     needs: swift
-    runs-on: macos-latest
+    runs-on: macos-15
 
     steps:
       - uses: actions/checkout@v4
@@ -38,7 +45,7 @@ jobs:
       run:
         working-directory: ./swiftpm-lib
     needs: swift
-    runs-on: macos-latest
+    runs-on: macos-15
 
     steps:
       - uses: actions/checkout@v4
