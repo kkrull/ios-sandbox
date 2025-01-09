@@ -17,9 +17,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - uses: swift-actions/setup-swift@65540b95f51493d65f5e59e97dcef9629ddf11bf
+      - uses: swift-actions/setup-swift@v2
         with:
-          swift-version: "6.0.2"
+          swift-version: "6.0.3"
       - run: swift --version
 
   swift-build:
@@ -31,9 +31,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - uses: swift-actions/setup-swift@65540b95f51493d65f5e59e97dcef9629ddf11bf
+      - uses: swift-actions/setup-swift@v2
         with:
-          swift-version: "6.0.2"
+          swift-version: "6.0.3"
       - run: make all
 
   swift-test:
@@ -45,8 +45,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - uses: swift-actions/setup-swift@65540b95f51493d65f5e59e97dcef9629ddf11bf
+      - uses: swift-actions/setup-swift@v2
         with:
-          swift-version: "6.0.2"
+          swift-version: "6.0.3"
       - run: make all
       - run: make test
