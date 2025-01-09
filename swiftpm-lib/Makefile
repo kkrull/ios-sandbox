@@ -1,4 +1,9 @@
-default: build
+default: all
+
+.PHONY: all
+all:
+	$(MAKE) -C Greeter all
+	$(MAKE) -C CLI all
 
 .PHONY: build
 build:

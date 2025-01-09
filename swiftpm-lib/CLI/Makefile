@@ -1,4 +1,8 @@
-default: build
+default: all
+
+.PHONY: all
+all: build
+	@:
 
 .PHONY: build
 build:

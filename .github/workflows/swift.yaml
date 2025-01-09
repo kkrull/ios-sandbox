@@ -1,0 +1,52 @@
+# https://docs.github.com/en/actions/use-cases-and-examples/building-and-testing/building-and-testing-swift
+name: Swift Build
+
+on:
+  pull_request:
+    branches: ["main"]
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  swift:
+    defaults:
+      run:
+        working-directory: ./swiftpm-lib
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: swift-actions/setup-swift@65540b95f51493d65f5e59e97dcef9629ddf11bf
+        with:
+          swift-version: "6.0.2"
+      - run: swift --version
+
+  swift-build:
+    defaults:
+      run:
+        working-directory: ./swiftpm-lib
+    needs: swift
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: swift-actions/setup-swift@65540b95f51493d65f5e59e97dcef9629ddf11bf
+        with:
+          swift-version: "6.0.2"
+      - run: make all
+
+  swift-test:
+    defaults:
+      run:
+        working-directory: ./swiftpm-lib
+    needs: swift
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: swift-actions/setup-swift@65540b95f51493d65f5e59e97dcef9629ddf11bf
+        with:
+          swift-version: "6.0.2"
+      - run: make all
+      - run: make test
