@@ -1,4 +1,5 @@
 # https://docs.github.com/en/actions/use-cases-and-examples/building-and-testing/building-and-testing-swift
+# TODO KDK: Try this for swift 6: https://github.com/swift-actions/setup-swift/issues/683#issuecomment-2408292745
 name: Swift Build
 
 on:
