@@ -1,5 +1,6 @@
-# https://docs.github.com/en/actions/use-cases-and-examples/building-and-testing/building-and-testing-swift
-# TODO KDK: Try this for swift 6: https://github.com/swift-actions/setup-swift/issues/683#issuecomment-2408292745
+# Use macos-15 image (beta) with XCode 16.x and Swift 6.x installed
+# https://github.com/actions/runner-images/issues/10686
+# MacOS image reference: https://github.com/actions/runner-images/tree/main/images/macos
 name: Swift Build
 
 on:
@@ -18,7 +19,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - uses: swift-actions/setup-swift@v2
       - name: Xcode versions
         run: |
           xcode-select -p
@@ -37,7 +37,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - uses: swift-actions/setup-swift@v2
       - run: make all
 
   swift-test:
@@ -49,6 +48,5 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - uses: swift-actions/setup-swift@v2
       - run: make all
       - run: make test
