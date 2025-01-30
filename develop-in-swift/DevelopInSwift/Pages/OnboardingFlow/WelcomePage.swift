@@ -1,10 +1,3 @@
-//
-//  WelcomePage.swift
-//  DevelopInSwift
-//
-//  Created by Kyle Krull on 1/30/25.
-//
-
 import SwiftUI
 
 struct WelcomePage: View {
