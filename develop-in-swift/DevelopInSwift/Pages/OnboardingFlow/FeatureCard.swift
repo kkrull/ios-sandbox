@@ -8,8 +8,13 @@ struct FeatureCard: View {
         HStack {
             Image(systemName: iconName)
                 .font(.largeTitle)
+                .frame(width: 50)
             
             Text(description)
+                .padding(.leading, 10)
+//                .border(.black, width: 1.5)
+
+            Spacer()
         }
         .padding()
         .background(.tint, in: RoundedRectangle(cornerRadius: 12))
