@@ -2,7 +2,6 @@ import SwiftUI
 
 struct WeatherView: View {
     var body: some View {
-        
         ScrollView(.horizontal) {
             HStack {
                 DayForecast(day: "Monday", isRainy: false, high: 2, low: 1)
