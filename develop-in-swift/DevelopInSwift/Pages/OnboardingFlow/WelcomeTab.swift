@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct WelcomePage: View {
+struct WelcomeTab: View {
     var body: some View {
         VStack {
             ZStack {
@@ -31,5 +31,5 @@ struct WelcomePage: View {
 }
 
 #Preview {
-    WelcomePage()
+    WelcomeTab()
 }

@@ -3,8 +3,8 @@ import SwiftUI
 struct OnboardingPage: View {
     var body: some View {
         TabView {
-            WelcomePage()
-            FeaturesPage()
+            WelcomeTab()
+            FeaturesTab()
         }
         .tabViewStyle(.page)
     }
