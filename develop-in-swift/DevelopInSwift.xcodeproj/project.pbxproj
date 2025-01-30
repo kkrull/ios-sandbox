@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		A38F7F702D4A7FB100D2036A /* ChatPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A38F7F702D4A7FB100D2036A /* DevelopInSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevelopInSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -40,7 +40,7 @@
 		A38F7F712D4A7FB100D2036A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A38F7F702D4A7FB100D2036A /* ChatPrototype.app */,
+				A38F7F702D4A7FB100D2036A /* DevelopInSwift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +48,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A38F7F6F2D4A7FB100D2036A /* ChatPrototype */ = {
+		A38F7F6F2D4A7FB100D2036A /* DevelopInSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A38F7F7E2D4A7FB100D2036A /* Build configuration list for PBXNativeTarget "ChatPrototype" */;
+			buildConfigurationList = A38F7F7E2D4A7FB100D2036A /* Build configuration list for PBXNativeTarget "DevelopInSwift" */;
 			buildPhases = (
 				A38F7F6C2D4A7FB100D2036A /* Sources */,
 				A38F7F6D2D4A7FB100D2036A /* Frameworks */,
@@ -63,11 +63,11 @@
 			fileSystemSynchronizedGroups = (
 				A38F7F722D4A7FB100D2036A /* ChatPrototype */,
 			);
-			name = ChatPrototype;
+			name = DevelopInSwift;
 			packageProductDependencies = (
 			);
 			productName = ChatPrototype;
-			productReference = A38F7F702D4A7FB100D2036A /* ChatPrototype.app */;
+			productReference = A38F7F702D4A7FB100D2036A /* DevelopInSwift.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +85,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A38F7F6B2D4A7FB000D2036A /* Build configuration list for PBXProject "ChatPrototype" */;
+			buildConfigurationList = A38F7F6B2D4A7FB000D2036A /* Build configuration list for PBXProject "DevelopInSwift" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +99,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A38F7F6F2D4A7FB100D2036A /* ChatPrototype */,
+				A38F7F6F2D4A7FB100D2036A /* DevelopInSwift */,
 			);
 		};
 /* End PBXProject section */
@@ -305,7 +305,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A38F7F6B2D4A7FB000D2036A /* Build configuration list for PBXProject "ChatPrototype" */ = {
+		A38F7F6B2D4A7FB000D2036A /* Build configuration list for PBXProject "DevelopInSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A38F7F7C2D4A7FB100D2036A /* Debug */,
@@ -314,7 +314,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A38F7F7E2D4A7FB100D2036A /* Build configuration list for PBXNativeTarget "ChatPrototype" */ = {
+		A38F7F7E2D4A7FB100D2036A /* Build configuration list for PBXNativeTarget "DevelopInSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A38F7F7F2D4A7FB100D2036A /* Debug */,
