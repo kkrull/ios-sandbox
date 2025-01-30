@@ -1,10 +1,10 @@
 import SwiftUI
 
 @main
-struct TutorialApp: App {
+struct DevelopInSwift: App {
     var body: some Scene {
         WindowGroup {
-            WeatherView()
+            WeatherPage()
         }
     }
 }

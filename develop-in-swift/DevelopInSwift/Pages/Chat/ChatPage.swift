@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ChatView: View {
+struct ChatPage: View {
     var body: some View {
         VStack {
             Text("Here is some text.")
@@ -19,5 +19,5 @@ struct ChatView: View {
 }
 
 #Preview {
-    ChatView()
+    ChatPage()
 }

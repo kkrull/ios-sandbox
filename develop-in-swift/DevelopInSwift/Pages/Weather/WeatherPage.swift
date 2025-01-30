@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct WeatherView: View {
+struct WeatherPage: View {
     var body: some View {
         ScrollView(.horizontal) {
             HStack {
@@ -24,5 +24,5 @@ struct WeatherView: View {
 }
 
 #Preview {
-    WeatherView()
+    WeatherPage()
 }
