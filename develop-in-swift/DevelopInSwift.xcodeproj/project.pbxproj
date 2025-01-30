@@ -11,9 +11,9 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		A38F7F722D4A7FB100D2036A /* ChatPrototype */ = {
+		A38F7F722D4A7FB100D2036A /* DevelopInSwift */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ChatPrototype;
+			path = DevelopInSwift;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +32,7 @@
 		A38F7F672D4A7FB000D2036A = {
 			isa = PBXGroup;
 			children = (
-				A38F7F722D4A7FB100D2036A /* ChatPrototype */,
+				A38F7F722D4A7FB100D2036A /* DevelopInSwift */,
 				A38F7F712D4A7FB100D2036A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,7 +61,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				A38F7F722D4A7FB100D2036A /* ChatPrototype */,
+				A38F7F722D4A7FB100D2036A /* DevelopInSwift */,
 			);
 			name = DevelopInSwift;
 			packageProductDependencies = (
