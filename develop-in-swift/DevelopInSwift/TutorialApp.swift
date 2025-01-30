@@ -4,7 +4,7 @@ import SwiftUI
 struct TutorialApp: App {
     var body: some Scene {
         WindowGroup {
-            ChatView()
+            WeatherView()
         }
     }
 }
